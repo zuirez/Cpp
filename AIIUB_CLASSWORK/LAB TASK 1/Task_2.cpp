@@ -1,20 +1,3 @@
-/*
-
-problem-2
-Write a c++ program to print the following information:
-
-=> Your Name
-=> Your ID
-=> Your University Name
-=> Your Department Name
-=> Your Faculty Name
-=> Semester
-=> Your Department Head Name
-=> Your Department Associate Dean Name
-=> Your Department Dean Name
-
-*/
-
 #include <iostream>
 using namespace std;
 
