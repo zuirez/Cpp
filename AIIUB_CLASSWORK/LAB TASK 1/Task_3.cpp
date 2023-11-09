@@ -1,5 +1,4 @@
 /*
-Problem Statement :
 Write a c++ program to print the following pattern using "cout" only -
 
 *
