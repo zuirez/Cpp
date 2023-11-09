@@ -1,8 +1,3 @@
-/*
-Problem-1
-Write a c++ program to store five float numbers. Find out the summation and average of five numbers.
-*/
-
 #include <iostream>
 using namespace std;
 
