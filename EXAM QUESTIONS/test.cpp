@@ -1,15 +1,11 @@
 /*
 
-Write a c++ program that will
-1. take user input in character from the menu to convert 
-2. take user input of the convertion number in float
-3. show the convertion result 
-4. use switch case   
-
-Convertion Menu :
-a. in to ft [1ft = 12inch]
-b. cm to m [1m = 100cm]
-c. km to mile [1km = ]
+Write a c++ program for a supershop
+1. take user input of daily sell amount in taka 
+2. prints weekly total sell amount
+3. prints daily average sell amount
+4. count days of below average sell
+5. if the total sell amount of the week is less then or equal to 10000 taka then print Target achieved otherwise print Target not achieved
 
 */
 
@@ -18,39 +14,45 @@ using namespace std;
 
 int main()
 {
-    char z;
-    float num, result=0;
+    float arr[7],total=0,avg;
+    int a=1;
 
-    cout<<"Convertion menu :"<<endl;
-    cout<<"a. in to ft"<<endl;
-    cout<<"b. cm to m"<<endl;
-    cout<<"c. km to mile"<<endl;
-    cout<<"d. celsius to kelvin"<<endl;
-
-    cout<<"Which convertion do you want to perform? Enter the letter :"<<endl;
-    cin>>z;
-    cout<<"Enter value :";
-    cin>>num;
-
-    switch (z)
+    cout<<"Enter daily sell amount : "<<endl;
+    for(int i=0; i<7; i++)
     {
-    case 'a': result=num/12;
-              cout<<"Convertion result :"<<result;
-              break;
+        cout<<"Day "<<a<<" : ";
+        cin>>arr[i];
+        a++;
+    }
 
-    case 'b': result=num/100;
-              cout<<"Convertion result :"<<result;
-              break;
+    for(int j=0; j<7; j++)
+    {
+        total=total+arr[j];
+    }
 
-    case 'c': result=num/0.623;
-              cout<<"Convertion result :"<<result;
-              break;
+    cout<<"Total weekly sell amount : "<<total<<endl;
+    avg=total/7;
 
-    case 'd': result=num+273;
-              cout<<"Convertion result :"<<result;
-              break;
-    
-    default: cout<<"Invalid Input";
-        break;
+    cout<<"Average sell amount : "<<avg<<endl;
+
+    int count=0;
+
+    for(int k=0; k<7; k++)
+    {
+        if(arr[k]<=avg)
+        {
+            count++;
+        }
+    }
+
+    cout<<"Count of below avg days : "<<count<<endl;
+
+    if(total>=10000)
+    {
+        cout<<"Target achieved"<<endl;
+    }
+    else
+    {
+        cout<<"Target not achieved";
     }
 }
