@@ -1,6 +1,6 @@
 /*
 
-The 'strcmp' function compares string 1 and string 2 based on the ASCII values of their characters only for the selected numbers.
+The 'strncmp' function compares string 1 and string 2 based on the ASCII values of their characters only for the selected numbers.
 
 If string1 is greater than string2, the output would be 1.
 If string1 is less than string2, the output would be -1.
