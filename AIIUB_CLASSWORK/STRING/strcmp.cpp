@@ -18,4 +18,6 @@ int main()
     char s2[50] = "a";
 
     cout << "Compare : " << strcmp(s1,s2) << endl;
+    cout << "Compare : " << strcmp(s2,s1) << endl;
+    cout << "Compare : " << strcmp(s1,s1) << endl;
 }
