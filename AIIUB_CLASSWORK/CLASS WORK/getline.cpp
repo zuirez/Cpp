@@ -1,6 +1,6 @@
 /*
 
-To take spaces inside a string or a character array we use getline
+To take spaces inside a string or a character array (user input) we use getline (built in function)
 
 */
 
