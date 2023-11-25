@@ -22,4 +22,5 @@ int main()
     cout<<"Address of a         : "<<&a<<endl;
     cout<<"Value of a using p   : "<<*p<<endl;
     cout<<"Address of a using p : "<<p<<endl;
+    cout<<"Address of p         : "<<&p<<endl;
 }
