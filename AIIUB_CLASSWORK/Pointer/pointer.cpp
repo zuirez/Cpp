@@ -8,6 +8,8 @@ p=&a. Now the location of a is stored in p.
 
 Note : p means the location of a where *p means the value of a
 
+We can both access and modify the value of a using pointer.
+
 */
 
 #include<iostream>
@@ -23,4 +25,7 @@ int main()
     cout<<"Value of a using p   : "<<*p<<endl;
     cout<<"Address of a using p : "<<p<<endl;
     cout<<"Address of p         : "<<&p<<endl;
+    cout<<"Current value of a   : "<<a<<endl;
+    *p=10;
+    cout<<"*p=10 value of a     :"<<a<<endl;
 }
