@@ -26,13 +26,13 @@ int main()
         cout<<endl;
     }
 
-    int a=0, max=0;
+    int max=0;
 
     for(int i=0; i<1; i++)
     {
         for(int j=0; j<5; j++)
         {
-            if(arr[i][j]>0)
+            if(arr[i][j]>max)
             {
                 max=arr[i][j];
             }
